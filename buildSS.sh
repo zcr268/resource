@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# wget https://raw.githubusercontent.com/zcr268/resource/master/buildSS.sh && chmod u+x buildSS.sh && ./buildSS.sh
 sudo apt-get update
 wget https://bootstrap.pypa.io/get-pip.py
 sudo python3 get-pip.py
