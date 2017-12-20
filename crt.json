@@ -1,38 +1,38 @@
 {
-    title: "Crt",
-    rules: [{
-        description: "Crt command+t <-> command+l",
-        manipulators: [{
-            type: "basic",
-            from: {
-                key_code: "t",
-                modifiers: {
-                    mandatory: ["left_command"]
+    "title": "Crt",
+    "rules": [{
+        "description": "Crt command+t <-> command+l",
+        "manipulators": [{
+            "type": "basic",
+            "from": {
+                "key_code": "t",
+                "modifiers": {
+                    "mandatory": ["left_command"]
                 },
             },
-            to: [{
-                key_code: "l",
-                modifiers: ["left_command"],
+            "to": [{
+                "key_code": "l",
+                "modifiers": ["left_command"],
             }],
-            conditions: [{
-                type: "frontmost_application_if",
-                bundle_identifiers: ["^com\.vandyke\.SecureCRT$"],
+            "conditions": [{
+                "type": "frontmost_application_if",
+                "bundle_identifiers": ["^com\.vandyke\.SecureCRT$"],
             }],
         }, {
-            type: "basic",
-            from: {
-                key_code: "l"
-                modifiers: {
-                    mandatory: ["left_command"]
+            "type": "basic",
+            "from": {
+                "key_code": "l",
+                "modifiers": {
+                    "mandatory": ["left_command"]
                 },
             },
-            to: [{
-                key_code: "t",
-                modifiers: ["left_command"],
+            "to": [{
+                "key_code": "t",
+                "modifiers": ["left_command"],
             }],
-            conditions: [{
-                type: "frontmost_application_if",
-                bundle_identifiers: ["^com\.vandyke\.SecureCRT$"],
+            "conditions": [{
+                "type": "frontmost_application_if",
+                "bundle_identifiers": ["^com\.vandyke\.SecureCRT$"],
             }],
         }, ],
     }],
