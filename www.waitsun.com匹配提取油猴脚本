@@ -1,0 +1,18 @@
+// ==UserScript==
+// @name         自建脚本汇总
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  try to take over the world!
+// @author       You
+// @match        https://www.waitsun.com
+// @grant        自建脚本
+// ==/UserScript==
+
+(function() {
+    'use strict';
+    if (/^https:\/\/www.waitsun.com\//.test(location.href) && document.getElementsByClassName("down")[1]){
+        console.log("www.waitsun.com 运行");
+        document.getElementsByClassName("down")[1].href=document.getElementsByClassName("down")[1].href+"#"+document.getElementsByClassName("down")[1].title.substring(document.getElementsByClassName("down")[1].title.length-4);
+    }
+    // Your code here...
+})();
