@@ -13,6 +13,11 @@
 
 # Use this just like apt-get for faster package downloading.
 
+#sudo mv /root/apt-fast.sh /usr/bin/apt-fast
+#sudo chmod +x /usr/bin/apt-fast
+#sudo leafpad /etc/axelrc
+# num_connections = 4 
+
 # Check for proper priveliges
 [ "`whoami`" = root ] || exec sudo "$0" "$@"
 
