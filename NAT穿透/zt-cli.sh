@@ -12,6 +12,9 @@ ipAssignmentPools='"ipAssignmentPools":[{"ipRangeStart":"'${ipprefix}'.2","ipRan
 routes='"routes":[{"target":"'${ip}'","via":null}]"'
 authorized='"authorized" : "true"'
 
+install(){
+    curl -s https://install.zerotier.com/ | sudo bash
+}
 getEnv(){
     echo -e "authToken=${authToken}\nnetworkId=${networkId}\nmemberId=${memberId}"
 }
