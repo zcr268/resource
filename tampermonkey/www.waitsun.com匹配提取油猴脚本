@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  try to take over the world!
 // @author       You
-// @match        https://www.waitsun.com
+// @include      *://www.waitsun.com*
 // @grant        自建脚本
 // ==/UserScript==
 
