@@ -15,7 +15,7 @@
 		    if ($(this).find('span.rounded.staus_green')[0] && $(this).find('span.rounded.staus_green')[0].innerHTML.indexOf("访问密码:") != -1) code = $(this).find('span.rounded.staus_green')[0].innerHTML.split(":")[1];
 		    $(this).find('a').each(function() {
 		        this.href = this.href + "#" + code;
-		    })
-		})
+		    });
+		});
     // Your code here...
 })();
