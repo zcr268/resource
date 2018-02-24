@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         爱情守望者追加code
-// @namespace    https://github.com/zcr268/
+// @namespace    https://github.com/zcr268/resource/tree/master/tampermonkey/
 // @version      0.2
 // @description  try to take over the world!
 // @author       You
