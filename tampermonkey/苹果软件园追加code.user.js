@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         苹果软件园追加code
-// @namespace    https://github.com/zcr268/
+// @namespace    https://github.com/zcr268/resource/tree/master/tampermonkey/
 // @version      0.4
 // @description  try to take over the world!
 // @author       LIONST
