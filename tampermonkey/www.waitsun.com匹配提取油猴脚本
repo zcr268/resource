@@ -1,11 +1,11 @@
 // ==UserScript==
-// @name         自建脚本汇总
+// @name         爱情守望者追加code
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  try to take over the world!
 // @author       You
 // @include      *://www.waitsun.com*
-// @grant        自建脚本
+// @grant        爱情守望者
 // ==/UserScript==
 
 (function() {
