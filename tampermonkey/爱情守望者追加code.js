@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         爱情守望者追加code
-// @namespace    http://tampermonkey.net/
-// @version      0.1
+// @namespace    https://github.com/zcr268/
+// @version      0.2
 // @description  try to take over the world!
 // @author       You
 // @include      *://www.waitsun.com*
