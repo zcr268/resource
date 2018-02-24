@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         苹果软件园追加code
 // @namespace    https://github.com/zcr268/
-// @version      0.1
+// @version      0.2
 // @description  try to take over the world!
 // @author       LIONST
 // @include      *://www.maczapp.com/*
+// @run-at       document-end
 // @grant        LIONST
 // ==/UserScript==
 
