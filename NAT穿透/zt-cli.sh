@@ -11,6 +11,7 @@ memberId="8a9f58dc0f"
 ipAssignmentPools='"ipAssignmentPools":[{"ipRangeStart":"'${ipprefix}'.2","ipRangeEnd":"'${ipprefix}'.254"}]'
 routes='"routes":[{"target":"'${ip}'","via":null}]"'
 authorized='"authorized" : "true"'
+ipAssignments='"ipAssignments": ["192.168.177.111"]'
 
 install(){
     curl -s https://install.zerotier.com/ | sudo bash
@@ -36,7 +37,6 @@ createNetwork(){
 }
 
 
-ipAssignments='"ipAssignments":["192.168.177.110"]'
 authorized() {
     curl -X POST --header "X-ZT1-Auth: ${authToken}" -d "{${authorized}}" http://localhost:9993/controller/network/${networkId}/member/${memberId}
 }
