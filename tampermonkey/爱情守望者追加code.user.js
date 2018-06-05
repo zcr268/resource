@@ -7,12 +7,16 @@
 // @include      *://www.waitsun.com*
 // @grant        爱情守望者
 // ==/UserScript==
-
 (function() {
     'use strict';
-    if (/^https:\/\/www.waitsun.com\//.test(location.href) && document.getElementsByClassName("down")[1]){
+    var classsType="btn btn-donate mr-3 downtip";
+    if (/^https:\/\/www.waitsun.com\//.test(location.href)) {
         console.log("www.waitsun.com 运行");
-        document.getElementsByClassName("down")[1].href=document.getElementsByClassName("down")[1].href+"#"+document.getElementsByClassName("down")[1].title.substring(document.getElementsByClassName("down")[1].title.length-4);
+        var down = document.getElementsByClassName(classsType);
+        for (var i = 0; i < down.length; i++) {
+            if (down[i].title.length - down[i].title.lastIndexOf(" ") == 5) {
+                down[i].href = down[i].href + "#" + down[i].title.substring(down[i].title.length - 4);
+            }
+        }
     }
-    // Your code here...
 })();
