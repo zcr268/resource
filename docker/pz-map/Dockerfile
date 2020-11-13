@@ -7,7 +7,7 @@ EXPOSE 8888
 
 ENV WORKDIR /app
 
-COPY docker-entrypoint.sh /usr/local/bin/
+COPY docker/pz-map/docker-entrypoint.sh /usr/local/bin/
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 
