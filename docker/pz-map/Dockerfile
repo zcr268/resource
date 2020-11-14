@@ -9,6 +9,6 @@ ENV WORKDIR /app
 
 COPY docker/pz-map/docker-entrypoint.sh /usr/local/bin/
 
-ENTRYPOINT ["/bin/bash"]
+#ENTRYPOINT ["/bin/bash"]
 
 #CMD ["$WORKDIR", "npm", "start"]
